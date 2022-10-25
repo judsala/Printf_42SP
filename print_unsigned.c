@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	utoa_len(unsigned int n)
+int	unsigned_len(unsigned int n)
 {
 	int	i;
 
@@ -25,12 +25,12 @@ int	utoa_len(unsigned int n)
 	return (i);
 }
 
-int	print_utoa(unsigned int n)
+int	print_unsigned(unsigned int n)
 {
 	int		size;
 	char	*result;
 
-	size = utoa_len(n);
+	size = unsigned_len(n);
 	result = (char *)malloc(size + 1);
 	if (!result)
 		return (0);
