@@ -38,7 +38,7 @@ static void	nbr_len(char *s, int n, size_t size)
 	}
 }
 
-int	print_itoa(int n)
+int	print_int(int n)
 {
 	char	*result;
 	size_t	size;
